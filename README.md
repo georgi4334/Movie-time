@@ -10,7 +10,6 @@ with the help of localStorage.
 
 ## Installation
 
-npm install
-
 ```bash
-pip install foobar
+
+npm install
