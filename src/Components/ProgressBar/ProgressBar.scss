@@ -1,0 +1,46 @@
+$gradientColorFrom: #e4628d;
+$gradientColorTo: #e78b6f;
+
+$BoxShadowFrom: #fc7ea8;
+$BoxShadowTo: #dd5884;
+
+
+.progressBar {
+	width: 15%;
+	margin: auto;
+
+}
+
+.progress {
+	background-color: #d8d8d8;
+	border-radius: 25px !important;
+	position: relative;
+	margin: 15px 0;
+	height: 1.5rem !important;
+
+
+}
+
+.progress-done {
+	background: linear-gradient(to left, $gradientColorFrom, $gradientColorTo);
+	box-shadow: 0 3px 3px -5px $BoxShadowFrom, 0 2px 5px $BoxShadowTo;
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
+
+//mobile design
+@media only screen and (max-width: 700px) {
+
+	.progressBar {
+		width: 80%;
+
+
+	}
+}

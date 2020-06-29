@@ -1,0 +1,16 @@
+$WhiteColor: #ffffff;
+
+.resultsFav{
+    margin-top: 50px;
+    h2{
+        font-family: "Carter One", cursive;
+        font-size: 43px ;
+        text-align: center;
+        color: white;
+        text-shadow: 0px 1px 5px $WhiteColor;
+    }
+    hr{
+        width: 50%;
+        background: $WhiteColor;
+    }
+}

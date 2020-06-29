@@ -1,0 +1,96 @@
+.results {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	.result {
+		position: relative;
+		width: 20%;
+		height: 550px;
+		padding: 15px;
+		margin: 30px 50px;
+		cursor: pointer;
+		animation: fadeIn 1.2s ease-in-out;
+
+		&:hover {
+			box-shadow: 0px 30px 100px -10px rgba(202, 148, 148, 0.603) !important;
+		}
+
+		h3 {
+			position: absolute;
+			bottom: 5px;
+			left: 0;
+			right: 0;
+			color: #FFF;
+			font-size: 20px;
+			font-weight: bold;
+			padding: 10px;
+			background: rgba(87, 81, 81, 0.521);
+			border-radius: 10px;
+			margin: auto 10px;
+			flex: 1 1 100%;
+			transition: 0.4s ease-out;
+			text-align: center;
+
+			&:hover {
+				background: #FFF;
+				color: #223343;
+			}
+		}
+	}
+
+	img {
+		display: block;
+		width: 100%;
+
+	}
+}
+
+.formNotification {
+	color: white;
+}
+
+//animation 
+
+
+@keyframes fadeIn {
+
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+//mobile design
+@media only screen and (max-width: 850px) {
+	.results {
+		flex-direction: column;
+
+		.result {
+			width: 80%;
+			overflow: hidden;
+		}
+	}
+}
+
+
+//mobile design
+@media only screen and (max-width: 1000px) {
+	.results {
+		flex-direction: column;
+
+		.result {
+			width: 80%;
+			overflow: hidden;
+		}
+	}
+}
